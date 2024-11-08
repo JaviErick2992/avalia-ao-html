@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Web Page</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(147, 233, 233);
+            padding: 10px;
+        }
+        
+        #main{
+            color:  #333;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*  Estilos Header */
+        header {
+            background-color: #f1f1f1;
+            padding: 1rem;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        /*  Estilos Main content  */
+        main {
+            padding: 2rem;
+        }
+
+        article {
+            background-color: #e9ecef;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+        }
+
+        article p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Estilos de links externos */
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /*  Estilos Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+         /* Estilos Footer */
+         footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            clear: both;
+        }
+
+        footer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+         /* Estilos à parte */
+         aside {
+            background-color: #f0f0f0;
+            border-left: 3px solid #0d243d;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 123, 255, 0.1);
+        }
+
+        aside h3 {
+            color: #0d243d;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        aside ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        aside li {
+            margin-bottom: 0.75rem;
+        }
+
+        aside a {
+            color: #0d243d;
+            transition: color 0.2s ease;
+        }
+
+        aside a:hover {
+            color: #0d243d;
+        }
+
+
+/* Estilos da barra de navegação */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right:0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav .menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+/* ... (resto dos estilos permanecem inalterados) ... */
+    </style>
+</head>
+<body>
+    <header>
+        <h2>ERICK DEPORTES</h2>
+    </header>
+    
+
+    <nav>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#sobre nós">sobre nós</a></li>
+            <li><a href="#Serviços">Serviços</a></li>
+            <li><a href="#contato">contato</a></li>
+        </ul>
+    </nav>
+
+     <main class="main" id="main">
+        <section>
+            <article>
+                <h2>É MEHLOR TER ALGUEM COMPETITIVO</h2>
+                <p>Depois dos maus resultados de Checo Pérez</p>
+                <img src="./deporte1.png" alt="HTML Logo" style="max-width: 100%; height: auto;">
+                <ul>
+                    <li>A temporada de Checo Pérez não está sendo nada. <br> Se é verdade que o carro da Red Bull está longe da sua melhor versão ,<br>
+                         o mexicano obteve resultados muito piores <br>que o seu companheiro de equipa Max Verstappen.
+                    </li>
+                    <li>Surgiram vários nomes que poderão acompanhar o tricampeão</li>
+                   
+                </ul>
+    
+            </article>
+        </section>
+        
+        <article>
+            <h2>CRÍTICAS À DUCATI</h2>
+            <p>Casey critica que líder da MotoGP não sobe na Ducati oficial em 2025<br> e sai da marca.</p>
+            <img src="./deporte2.png" alt="HTML Logo" style="max-width: 100%; height: auto;">
+            <ul>
+                <li>Casey Stoner esteve ultimamente no Eicma,<br> o Salão de Motociclismo de Milão.</li>
+                <li>O bicampeão australiano é um mito na Ducat</li>
+                <li>Debería ser de vez en cuando, como la F1</li>
+            </ul>
+
+            
+        </article>
+        <article>
+            <h2>PROBLEMAS NO REAL MADRD</h2>
+            <p>Não gostei nada da derrota.</p>
+            <img src="./deporte3.png" alt="HTML Logo" style="max-width: 100%; height: auto;">
+            <ul>
+                <li>O Real Madrid sofreu uma derrota dolorosa contra o Milan</li>
+                <li>Um pouco de torcedor do Madrid pode mudar tudo</li>
+                <li>Aquela jogada aos 39 minutos causou espanto no clube branco</li>
+            </ul>
+
+            
+        </article>
+     
+
+
+
+        <aside>
+            <h3>Lista de Links</h3>
+            <ul>
+                <li><a href="https://www.marca.com/" target="_blank">Diario Marca</a></li>
+                <li><a href="https://espndeportes.espn.com/" target="_blank">ESPN Deportes</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+                <li><a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML Specification</a></li>
+            </ul>
+        </aside>
+    </main>
+   
+
+    <a href="https://etic.pt/" target="_blank">etic</a>
+
+    <table >
+        <tr>
+          <th>Posición</th>
+          <th>Equipo</th>
+          <th>Jugadores</th>
+          <th>Partidos</th>
+          <th>Goles</th>
+          <th>Puntos</th>
+        </tr>
+        
+        <tr>
+          <td>1</td>
+          <td>Barcelona</td>
+          <td>25</td>
+          <td>30</td>
+          <td>120</td>
+          <td>90</td>
+        </tr>
+        
+        <tr>
+          <td>2</td>
+          <td>Real Madrid</td>
+          <td>24</td>
+          <td>29</td>
+          <td>115</td>
+          <td>85</td>
+        </tr>
+        
+        <tr>
+          <td>3</td>
+          <td>Atlético de Madrid</td>
+          <td>22</td>
+          <td>28</td>
+          <td>100</td>
+          <td>80</td>
+        </tr>
+        
+        <tr>
+          <td>4</td>
+          <td>Sevilla FC</td>
+          <td>21</td>
+          <td>27</td>
+          <td>95</td>
+          <td>75</td>
+        </tr>
+        
+        <tr>
+          <td>5</td>
+          <td>Valencia CF</td>
+          <td>20</td>
+          <td>26</td>
+          <td>90</td>
+          <td>70</td>
+        </tr>
+      </table>
+      
+
+    <footer>
+        <p> 2024 Site Erick.  direitos reservados.</p>
+        <img src="website-logo.png" alt="logo">
+    </footer>
+
+</body>
+</html>
